@@ -22,6 +22,22 @@
 - **[CWRU](https://engineering.case.edu/bearingdatacenter)** - 凯斯西储大学轴承数据集
 - **[MFPT](https://www.mfpt.org/fault-data-sets)** - 美国机械故障预防技术学会轴承数据集
 
+## 文件说明
+
+| Index | File Name        | Description                                                                                     | Paper                                                                                      |
+|:-----:|:----------------:|:-----------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------:|
+| 1     | CCDG.py          | Model                                                                                           | Conditional Contrastive Domain Generalization for Fault Diagnosis                          |
+| 2     | CNN-C.py         | Model                                                                                           | Learn Generalization Feature via Convolutional Neural Network: A Fault Diagnosis Scheme Toward Unseen Operating Conditions |
+| 3     | DANN.py          | Model                                                                                           | Adversarial Training Among Multiple Source Domains                                         |
+| 4     | DCORAL.py        | Model                                                                                           | Reduce CORAL Among Multiple Source Domains                                                 |
+| 5     | DDC.py           | Model                                                                                           | Reduce MMD Among Multiple Source Domains                                                   |
+| 6     | DGNIS.py         | Model                                                                                           | A Domain Generalization Network Combining Invariance and Specificity Towards Real-Time Intelligent Fault Diagnosis |
+| 7     | ERM.py           | Model                                                                                           | Reduce Classification Loss                                                                 |
+| 8     | IEDGNet.py       | Model                                                                                           | A Hybrid Generalization Network for Intelligent Fault Diagnosis of Rotating Machinery Under Unseen Working Conditions |
+| 9     | data_loaded_1d.py| Data Preparation                                                                                | /                                                                                          |
+| 10    | resnet18_1d.py   | Network                                                                                         | /                                                                                          |
+| 11    | utils.py         | Metrics                                                                                         | /                                                                                          |
+
 
 ### 领域泛化数据集的建立
 - 建立一个根文件夹"datasets" 
@@ -98,6 +114,11 @@ python train.py --model_name ADACL --source CWRU_0,CWRU_1,CWRU_2  --target CWRU_
 ```shell
 python train.py --model_name DAN --source CWRU --target MFPT --train_mode single_source --cuda_device 0
 ```
-（在进行跨工况或跨设备模型训练之前，需将CWRU-within和MFPT-within文件名修改成CWRU和MFPT或将CWRU-cross和MFPT-cross文件名修改成CWRU和MFPT）
+（在进行跨工况或跨设备模型训练之前，需将CWRU-within和MFPT-within文件名修改成CWRU和MFPT或将CWRU-cross和MFPT-cross文件名修改成CWRU和MFPT）  
+## 参考代码  
+https://github.com/CHAOZHAO-1/DG-PHM  
+
+https://github.com/Feaxure-fresh/TL-Bearing-Fault-Diagnosis
+
 
 
