@@ -48,7 +48,7 @@
 1. 在对应的数据集中按照设备的不同工况分别建立 "condition_0", "condition_1","condition_2" 等文件夹。
 2. 在每个工况的文件夹中分别建立不同轴承故障类型的子文件夹，将子文件夹命名为轴承的故障类型。
 
-以CWRU数据集为例（4种运行工况、10种故障类型）:
+CWRU数据集（4种运行工况、10种故障类型）:
 ```
 .
 └── datasets
@@ -114,7 +114,7 @@ python train.py --model_name ADACL --source CWRU_0,CWRU_1,CWRU_2  --target CWRU_
 ```shell
 python train.py --model_name DAN --source CWRU --target MFPT --train_mode single_source --cuda_device 0
 ```
-（在进行跨工况或跨设备模型训练之前，需将CWRU-within和MFPT-within文件名修改成CWRU和MFPT或将CWRU-cross和MFPT-cross文件名修改成CWRU和MFPT）  
+（在进行跨工况或跨设备模型训练之前，需将CWRU-within文件名修改成CWRU或将CWRU-cross和MFPT-cross文件名修改成CWRU和MFPT）  
 ## 参考代码  
 https://github.com/CHAOZHAO-1/DG-PHM  
 
