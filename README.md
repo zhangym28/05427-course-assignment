@@ -87,17 +87,17 @@ CWRU数据集（4种运行工况、10种故障类型）:
 选择一个工况数据为测试集，其他工况的数据集为训练集，但来自于同一数据集。
 
 例如:选择CWRU数据集，采用ADACL算法，训练集为CWRU_0,CWRU_1,CWRU_2，测试集为CWRU_3对模型进行训练。
-```shell
+
 python train.py --model_name ADACL --source CWRU_0,CWRU_1,CWRU_2  --target CWRU_3 --train_mode multi_source --cuda_device 0 
-```
+
 
 ### 跨设备故障诊断
 训练集和测试集来自于不同的数据集。
 
 例如: 采用DAN算法，训练集为CWRU，测试集为MFPT对模型进行训练。
-```shell
+
 python train.py --model_name DAN --source CWRU --target MFPT --train_mode single_source --cuda_device 0
-```
+
 （在进行跨工况或跨设备模型训练之前，需将CWRU-within文件名修改成CWRU或将CWRU-cross和MFPT-cross文件名修改成CWRU和MFPT）  
 ## 参考代码  
 https://github.com/CHAOZHAO-1/DG-PHM  
