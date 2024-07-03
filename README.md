@@ -94,9 +94,9 @@ python train.py --model_name ADACL --source CWRU_0,CWRU_1,CWRU_2  --target CWRU_
 ### 跨设备故障诊断
 训练集和测试集来自于不同的数据集。
 
-例如: 采用DAN算法，训练集为CWRU，测试集为MFPT对模型进行训练。（采用命令行在pycharm终端里运行）
+例如: 采用DANN算法，训练集为CWRU，测试集为MFPT对模型进行训练。（采用命令行在pycharm终端里运行）
 
-python train.py --model_name DAN --source CWRU --target MFPT --train_mode single_source --cuda_device 0
+python train.py --model_name DANN --source CWRU --target MFPT --train_mode single_source --cuda_device 0
 
 （采用命令行在pycharm终端里进行跨设备模型训练之前，需将CWRU文件名修改成CWRU-within，CWRU-cross文件名修改成CWRU）  
 ## 参考代码  
