@@ -1,0 +1,35 @@
+07-03 15:48:54 model_name: MixStyle
+07-03 15:48:54 source: CWRU
+07-03 15:48:54 target: MFPT
+07-03 15:48:54 data_dir: ./datasets
+07-03 15:48:54 train_mode: single_source
+07-03 15:48:54 cuda_device: 0
+07-03 15:48:54 save_dir: ./ckpt
+07-03 15:48:54 max_epoch: 30
+07-03 15:48:54 batch_size: 64
+07-03 15:48:54 num_workers: 4
+07-03 15:48:54 signal_size: 1024
+07-03 15:48:54 random_state: 1
+07-03 15:48:54 normlizetype: -1-1
+07-03 15:48:54 opt: sgd
+07-03 15:48:54 lr: 0.01
+07-03 15:48:54 momentum: 0.9
+07-03 15:48:54 betas: (0.9, 0.999)
+07-03 15:48:54 weight_decay: 0.0005
+07-03 15:48:54 lr_scheduler: stepLR
+07-03 15:48:54 gamma: 0.2
+07-03 15:48:54 steps: 10
+07-03 15:48:54 tradeoff: ['exp', 'exp', 'exp']
+07-03 15:48:54 dropout: 0.0
+07-03 15:48:54 save: True
+07-03 15:48:54 load_path: 
+07-03 15:48:54 save_path: ./ckpt\MixStyle\single_source\[CWRU]To[MFPT]_0703-154854
+07-03 15:48:54 Detect 3 classes: ['inner', 'normal', 'outer']
+07-03 15:48:54 using 1 / 1 gpus
+07-03 15:49:00 Source set CWRU number of samples 26187.
+07-03 15:49:00 Training set number of samples 2973.
+07-03 15:49:00 Validation set number of samples 745.
+07-03 15:50:12 -----Epoch 1/30-----
+07-03 15:50:12 current lr: [0.01, 0.01]
+07-03 15:50:30 Train-Loss Source Classifier: 0.6948
+07-03 15:50:30 Train-Acc Source Data: 0.6858

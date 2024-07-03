@@ -1,0 +1,274 @@
+05-26 20:16:00 model_name: MFSAN
+05-26 20:16:00 source: CWRU_0,CWRU_1,CWRU_3
+05-26 20:16:00 target: CWRU_1
+05-26 20:16:00 data_dir: ./datasets
+05-26 20:16:00 train_mode: multi_source
+05-26 20:16:00 cuda_device: 0
+05-26 20:16:00 save_dir: ./ckpt
+05-26 20:16:00 max_epoch: 30
+05-26 20:16:00 batch_size: 64
+05-26 20:16:00 num_workers: 4
+05-26 20:16:00 signal_size: 1024
+05-26 20:16:00 random_state: 1
+05-26 20:16:00 normlizetype: -1-1
+05-26 20:16:00 opt: sgd
+05-26 20:16:00 lr: 0.01
+05-26 20:16:00 momentum: 0.9
+05-26 20:16:00 betas: (0.9, 0.999)
+05-26 20:16:00 weight_decay: 0.0005
+05-26 20:16:00 lr_scheduler: stepLR
+05-26 20:16:00 gamma: 0.2
+05-26 20:16:00 steps: 10
+05-26 20:16:00 tradeoff: ['exp', 'exp', 'exp']
+05-26 20:16:00 dropout: 0.0
+05-26 20:16:00 save: True
+05-26 20:16:00 load_path: 
+05-26 20:16:00 save_path: ./ckpt\MFSAN\multi_source\[CWRU_0CWRU_1CWRU_3]To[CWRU_1]_0526-201600
+05-26 20:16:00 Detect 10 classes: ['B007', 'B014', 'B021', 'IR007', 'IR014', 'IR021', 'Normal', 'OR007', 'OR014', 'OR021']
+05-26 20:16:00 using 1 / 1 gpus
+05-26 20:16:01 Source set CWRU_0 number of samples 5668.
+05-26 20:16:01 Source set CWRU_1 number of samples 9374.
+05-26 20:16:01 Source set CWRU_3 number of samples 9492.
+05-26 20:16:02 Training set number of samples 7495.
+05-26 20:16:02 Validation set number of samples 1879.
+05-26 20:17:19 -----Epoch 1/30-----
+05-26 20:17:19 current lr: [0.01, 0.01]
+05-26 20:18:29 Train-Loss Source Classifier: 1.6157
+05-26 20:18:29 Train-Loss MMD: 0.1137
+05-26 20:18:29 Train-Loss L1: 0.0389
+05-26 20:18:29 Train-Acc Source Data: 0.4330
+05-26 20:18:56 Val-Acc Target Data: 0.5242
+05-26 20:18:57 The best model epoch 1, val-acc 0.5242
+05-26 20:18:57 -----Epoch 2/30-----
+05-26 20:18:57 current lr: [0.01, 0.01]
+05-26 20:20:18 Train-Loss Source Classifier: 0.7360
+05-26 20:20:18 Train-Loss MMD: 0.1246
+05-26 20:20:18 Train-Loss L1: 0.0500
+05-26 20:20:18 Train-Acc Source Data: 0.7209
+05-26 20:20:58 Val-Acc Target Data: 0.8254
+05-26 20:20:59 The best model epoch 2, val-acc 0.8254
+05-26 20:20:59 -----Epoch 3/30-----
+05-26 20:20:59 current lr: [0.01, 0.01]
+05-26 20:24:19 Train-Loss Source Classifier: 0.4210
+05-26 20:24:19 Train-Loss MMD: 0.1191
+05-26 20:24:19 Train-Loss L1: 0.0402
+05-26 20:24:19 Train-Acc Source Data: 0.8387
+05-26 20:25:06 Val-Acc Target Data: 0.8373
+05-26 20:25:07 The best model epoch 3, val-acc 0.8373
+05-26 20:25:07 -----Epoch 4/30-----
+05-26 20:25:07 current lr: [0.01, 0.01]
+05-26 20:28:10 Train-Loss Source Classifier: 0.2871
+05-26 20:28:10 Train-Loss MMD: 0.1141
+05-26 20:28:10 Train-Loss L1: 0.0338
+05-26 20:28:10 Train-Acc Source Data: 0.8932
+05-26 20:28:43 Val-Acc Target Data: 0.9138
+05-26 20:28:44 The best model epoch 4, val-acc 0.9138
+05-26 20:28:44 -----Epoch 5/30-----
+05-26 20:28:44 current lr: [0.01, 0.01]
+05-26 20:31:12 Train-Loss Source Classifier: 0.2218
+05-26 20:31:12 Train-Loss MMD: 0.1098
+05-26 20:31:12 Train-Loss L1: 0.0284
+05-26 20:31:12 Train-Acc Source Data: 0.9195
+05-26 20:31:54 Val-Acc Target Data: 0.9197
+05-26 20:31:56 The best model epoch 5, val-acc 0.9197
+05-26 20:31:56 -----Epoch 6/30-----
+05-26 20:31:56 current lr: [0.01, 0.01]
+05-26 20:33:39 Train-Loss Source Classifier: 0.1473
+05-26 20:33:39 Train-Loss MMD: 0.1093
+05-26 20:33:39 Train-Loss L1: 0.0234
+05-26 20:33:39 Train-Acc Source Data: 0.9395
+05-26 20:34:17 Val-Acc Target Data: 0.9617
+05-26 20:34:18 The best model epoch 6, val-acc 0.9617
+05-26 20:34:18 -----Epoch 7/30-----
+05-26 20:34:18 current lr: [0.01, 0.01]
+05-26 20:36:33 Train-Loss Source Classifier: 0.1368
+05-26 20:36:33 Train-Loss MMD: 0.1046
+05-26 20:36:33 Train-Loss L1: 0.0204
+05-26 20:36:33 Train-Acc Source Data: 0.9420
+05-26 20:37:08 Val-Acc Target Data: 0.9429
+05-26 20:37:08 The best model epoch 6, val-acc 0.9617
+05-26 20:37:08 -----Epoch 8/30-----
+05-26 20:37:08 current lr: [0.01, 0.01]
+05-26 20:40:48 Train-Loss Source Classifier: 0.1091
+05-26 20:40:48 Train-Loss MMD: 0.1038
+05-26 20:40:48 Train-Loss L1: 0.0165
+05-26 20:40:48 Train-Acc Source Data: 0.9547
+05-26 20:41:15 Val-Acc Target Data: 0.9267
+05-26 20:41:16 The best model epoch 6, val-acc 0.9617
+05-26 20:41:16 -----Epoch 9/30-----
+05-26 20:41:16 current lr: [0.01, 0.01]
+05-26 20:42:41 Train-Loss Source Classifier: 0.0949
+05-26 20:42:41 Train-Loss MMD: 0.1070
+05-26 20:42:41 Train-Loss L1: 0.0148
+05-26 20:42:41 Train-Acc Source Data: 0.9581
+05-26 20:43:08 Val-Acc Target Data: 0.9736
+05-26 20:43:09 The best model epoch 9, val-acc 0.9736
+05-26 20:43:09 -----Epoch 10/30-----
+05-26 20:43:09 current lr: [0.01, 0.01]
+05-26 20:45:02 Train-Loss Source Classifier: 0.0896
+05-26 20:45:02 Train-Loss MMD: 0.1024
+05-26 20:45:02 Train-Loss L1: 0.0133
+05-26 20:45:02 Train-Acc Source Data: 0.9610
+05-26 20:45:28 Val-Acc Target Data: 0.9504
+05-26 20:45:29 The best model epoch 9, val-acc 0.9736
+05-26 20:45:29 -----Epoch 11/30-----
+05-26 20:45:29 current lr: [0.002, 0.002]
+05-26 20:46:53 Train-Loss Source Classifier: 0.0587
+05-26 20:46:53 Train-Loss MMD: 0.1000
+05-26 20:46:53 Train-Loss L1: 0.0102
+05-26 20:46:53 Train-Acc Source Data: 0.9685
+05-26 20:47:20 Val-Acc Target Data: 0.9925
+05-26 20:47:20 The best model epoch 11, val-acc 0.9925
+05-26 20:47:20 -----Epoch 12/30-----
+05-26 20:47:20 current lr: [0.002, 0.002]
+05-26 20:50:07 Train-Loss Source Classifier: 0.0510
+05-26 20:50:07 Train-Loss MMD: 0.0982
+05-26 20:50:07 Train-Loss L1: 0.0089
+05-26 20:50:07 Train-Acc Source Data: 0.9702
+05-26 20:50:34 Val-Acc Target Data: 0.9925
+05-26 20:50:35 The best model epoch 12, val-acc 0.9925
+05-26 20:50:35 -----Epoch 13/30-----
+05-26 20:50:35 current lr: [0.002, 0.002]
+05-26 20:52:02 Train-Loss Source Classifier: 0.0473
+05-26 20:52:02 Train-Loss MMD: 0.0982
+05-26 20:52:02 Train-Loss L1: 0.0083
+05-26 20:52:02 Train-Acc Source Data: 0.9740
+05-26 20:52:28 Val-Acc Target Data: 0.9919
+05-26 20:52:29 The best model epoch 12, val-acc 0.9925
+05-26 20:52:29 -----Epoch 14/30-----
+05-26 20:52:29 current lr: [0.002, 0.002]
+05-26 20:54:17 Train-Loss Source Classifier: 0.0451
+05-26 20:54:17 Train-Loss MMD: 0.1000
+05-26 20:54:17 Train-Loss L1: 0.0075
+05-26 20:54:17 Train-Acc Source Data: 0.9746
+05-26 20:54:45 Val-Acc Target Data: 0.9919
+05-26 20:54:46 The best model epoch 12, val-acc 0.9925
+05-26 20:54:46 -----Epoch 15/30-----
+05-26 20:54:46 current lr: [0.002, 0.002]
+05-26 20:56:36 Train-Loss Source Classifier: 0.0446
+05-26 20:56:36 Train-Loss MMD: 0.0975
+05-26 20:56:36 Train-Loss L1: 0.0078
+05-26 20:56:36 Train-Acc Source Data: 0.9750
+05-26 20:57:03 Val-Acc Target Data: 0.9935
+05-26 20:57:04 The best model epoch 15, val-acc 0.9935
+05-26 20:57:04 -----Epoch 16/30-----
+05-26 20:57:04 current lr: [0.002, 0.002]
+05-26 20:59:27 Train-Loss Source Classifier: 0.0457
+05-26 20:59:27 Train-Loss MMD: 0.0974
+05-26 20:59:27 Train-Loss L1: 0.0074
+05-26 20:59:27 Train-Acc Source Data: 0.9764
+05-26 20:59:54 Val-Acc Target Data: 0.9957
+05-26 20:59:55 The best model epoch 16, val-acc 0.9957
+05-26 20:59:55 -----Epoch 17/30-----
+05-26 20:59:55 current lr: [0.002, 0.002]
+05-26 21:01:19 Train-Loss Source Classifier: 0.0399
+05-26 21:01:19 Train-Loss MMD: 0.0978
+05-26 21:01:19 Train-Loss L1: 0.0071
+05-26 21:01:19 Train-Acc Source Data: 0.9777
+05-26 21:01:46 Val-Acc Target Data: 0.9962
+05-26 21:01:47 The best model epoch 17, val-acc 0.9962
+05-26 21:01:47 -----Epoch 18/30-----
+05-26 21:01:47 current lr: [0.002, 0.002]
+05-26 21:03:11 Train-Loss Source Classifier: 0.0445
+05-26 21:03:11 Train-Loss MMD: 0.0964
+05-26 21:03:11 Train-Loss L1: 0.0069
+05-26 21:03:11 Train-Acc Source Data: 0.9744
+05-26 21:03:39 Val-Acc Target Data: 0.9973
+05-26 21:03:40 The best model epoch 18, val-acc 0.9973
+05-26 21:03:40 -----Epoch 19/30-----
+05-26 21:03:40 current lr: [0.002, 0.002]
+05-26 21:06:28 Train-Loss Source Classifier: 0.0444
+05-26 21:06:28 Train-Loss MMD: 0.0976
+05-26 21:06:28 Train-Loss L1: 0.0069
+05-26 21:06:28 Train-Acc Source Data: 0.9756
+05-26 21:06:55 Val-Acc Target Data: 0.9968
+05-26 21:06:56 The best model epoch 18, val-acc 0.9973
+05-26 21:06:56 -----Epoch 20/30-----
+05-26 21:06:56 current lr: [0.002, 0.002]
+05-26 21:08:37 Train-Loss Source Classifier: 0.0425
+05-26 21:08:37 Train-Loss MMD: 0.0971
+05-26 21:08:37 Train-Loss L1: 0.0067
+05-26 21:08:37 Train-Acc Source Data: 0.9769
+05-26 21:09:14 Val-Acc Target Data: 0.9978
+05-26 21:09:15 The best model epoch 20, val-acc 0.9978
+05-26 21:09:15 -----Epoch 21/30-----
+05-26 21:09:15 current lr: [0.0004, 0.0004]
+05-26 21:12:31 Train-Loss Source Classifier: 0.0388
+05-26 21:12:31 Train-Loss MMD: 0.0946
+05-26 21:12:31 Train-Loss L1: 0.0064
+05-26 21:12:31 Train-Acc Source Data: 0.9788
+05-26 21:13:09 Val-Acc Target Data: 0.9984
+05-26 21:13:10 The best model epoch 21, val-acc 0.9984
+05-26 21:13:10 -----Epoch 22/30-----
+05-26 21:13:10 current lr: [0.0004, 0.0004]
+05-26 21:14:47 Train-Loss Source Classifier: 0.0388
+05-26 21:14:47 Train-Loss MMD: 0.0997
+05-26 21:14:47 Train-Loss L1: 0.0062
+05-26 21:14:47 Train-Acc Source Data: 0.9789
+05-26 21:15:26 Val-Acc Target Data: 0.9973
+05-26 21:15:27 The best model epoch 21, val-acc 0.9984
+05-26 21:15:27 -----Epoch 23/30-----
+05-26 21:15:27 current lr: [0.0004, 0.0004]
+05-26 21:19:12 Train-Loss Source Classifier: 0.0395
+05-26 21:19:12 Train-Loss MMD: 0.0941
+05-26 21:19:12 Train-Loss L1: 0.0060
+05-26 21:19:12 Train-Acc Source Data: 0.9776
+05-26 21:19:41 Val-Acc Target Data: 0.9984
+05-26 21:19:42 The best model epoch 23, val-acc 0.9984
+05-26 21:19:42 -----Epoch 24/30-----
+05-26 21:19:42 current lr: [0.0004, 0.0004]
+05-26 21:21:29 Train-Loss Source Classifier: 0.0423
+05-26 21:21:29 Train-Loss MMD: 0.0950
+05-26 21:21:29 Train-Loss L1: 0.0062
+05-26 21:21:29 Train-Acc Source Data: 0.9756
+05-26 21:21:55 Val-Acc Target Data: 0.9984
+05-26 21:21:55 The best model epoch 24, val-acc 0.9984
+05-26 21:21:55 -----Epoch 25/30-----
+05-26 21:21:55 current lr: [0.0004, 0.0004]
+05-26 21:23:46 Train-Loss Source Classifier: 0.0365
+05-26 21:23:46 Train-Loss MMD: 0.0956
+05-26 21:23:46 Train-Loss L1: 0.0062
+05-26 21:23:46 Train-Acc Source Data: 0.9809
+05-26 21:24:13 Val-Acc Target Data: 0.9973
+05-26 21:24:14 The best model epoch 24, val-acc 0.9984
+05-26 21:24:14 -----Epoch 26/30-----
+05-26 21:24:14 current lr: [0.0004, 0.0004]
+05-26 21:25:38 Train-Loss Source Classifier: 0.0404
+05-26 21:25:38 Train-Loss MMD: 0.0957
+05-26 21:25:38 Train-Loss L1: 0.0061
+05-26 21:25:38 Train-Acc Source Data: 0.9788
+05-26 21:26:04 Val-Acc Target Data: 0.9978
+05-26 21:26:05 The best model epoch 24, val-acc 0.9984
+05-26 21:26:05 -----Epoch 27/30-----
+05-26 21:26:05 current lr: [0.0004, 0.0004]
+05-26 21:28:26 Train-Loss Source Classifier: 0.0387
+05-26 21:28:26 Train-Loss MMD: 0.0934
+05-26 21:28:26 Train-Loss L1: 0.0060
+05-26 21:28:26 Train-Acc Source Data: 0.9776
+05-26 21:28:52 Val-Acc Target Data: 0.9978
+05-26 21:28:53 The best model epoch 24, val-acc 0.9984
+05-26 21:28:53 -----Epoch 28/30-----
+05-26 21:28:53 current lr: [0.0004, 0.0004]
+05-26 21:30:47 Train-Loss Source Classifier: 0.0368
+05-26 21:30:47 Train-Loss MMD: 0.0952
+05-26 21:30:47 Train-Loss L1: 0.0060
+05-26 21:30:47 Train-Acc Source Data: 0.9814
+05-26 21:31:14 Val-Acc Target Data: 0.9989
+05-26 21:31:15 The best model epoch 28, val-acc 0.9989
+05-26 21:31:15 -----Epoch 29/30-----
+05-26 21:31:15 current lr: [0.0004, 0.0004]
+05-26 21:32:39 Train-Loss Source Classifier: 0.0411
+05-26 21:32:39 Train-Loss MMD: 0.0915
+05-26 21:32:39 Train-Loss L1: 0.0059
+05-26 21:32:39 Train-Acc Source Data: 0.9768
+05-26 21:33:07 Val-Acc Target Data: 0.9978
+05-26 21:33:08 The best model epoch 28, val-acc 0.9989
+05-26 21:33:08 -----Epoch 30/30-----
+05-26 21:33:08 current lr: [0.0004, 0.0004]
+05-26 21:35:21 Train-Loss Source Classifier: 0.0405
+05-26 21:35:21 Train-Loss MMD: 0.0940
+05-26 21:35:21 Train-Loss L1: 0.0059
+05-26 21:35:21 Train-Acc Source Data: 0.9761
+05-26 21:35:47 Val-Acc Target Data: 0.9978
+05-26 21:35:48 The best model epoch 28, val-acc 0.9989
+05-26 21:35:48 Model saved to ./ckpt\MFSAN\multi_source\[CWRU_0CWRU_1CWRU_3]To[CWRU_1]_0526-201600.pth

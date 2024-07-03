@@ -1,0 +1,42 @@
+06-30 23:02:03 model_name: VREx
+06-30 23:02:03 source: CWRU_0,CWRU_1,CWRU_2
+06-30 23:02:03 target: CWRU_3
+06-30 23:02:03 data_dir: ./datasets
+06-30 23:02:03 train_mode: multi_source
+06-30 23:02:03 cuda_device: 0
+06-30 23:02:03 save_dir: ./ckpt
+06-30 23:02:03 max_epoch: 30
+06-30 23:02:03 batch_size: 64
+06-30 23:02:03 num_workers: 4
+06-30 23:02:03 signal_size: 1024
+06-30 23:02:03 random_state: 1
+06-30 23:02:03 normlizetype: -1-1
+06-30 23:02:03 opt: sgd
+06-30 23:02:03 lr: 0.01
+06-30 23:02:03 momentum: 0.9
+06-30 23:02:03 betas: (0.9, 0.999)
+06-30 23:02:03 weight_decay: 0.0005
+06-30 23:02:03 lr_scheduler: stepLR
+06-30 23:02:03 gamma: 0.2
+06-30 23:02:03 steps: 10
+06-30 23:02:03 tradeoff: ['exp', 'exp', 'exp']
+06-30 23:02:03 dropout: 0.0
+06-30 23:02:03 save: True
+06-30 23:02:03 load_path: 
+06-30 23:02:03 save_path: ./ckpt\VREx\multi_source\[CWRU_0CWRU_1CWRU_2]To[CWRU_3]_0630-230203
+06-30 23:02:03 Detect 10 classes: ['B007', 'B014', 'B021', 'IR007', 'IR014', 'IR021', 'Normal', 'OR007', 'OR014', 'OR021']
+06-30 23:02:03 using 1 / 1 gpus
+06-30 23:02:04 Source set CWRU_0 number of samples 5668.
+06-30 23:02:04 Source set CWRU_1 number of samples 9374.
+06-30 23:02:04 Source set CWRU_2 number of samples 9488.
+06-30 23:02:05 Training set number of samples 7590.
+06-30 23:02:05 Validation set number of samples 1902.
+06-30 23:03:24 -----Epoch 1/30-----
+06-30 23:03:24 current lr: [0.01]
+06-30 23:04:58 Train-Loss Source Classifier: 1.1475
+06-30 23:04:58 Train-Loss Risk Variance: 0.0101
+06-30 23:04:58 Train-Acc Source Data: 0.5868
+06-30 23:05:43 Val-Acc Target Data: 0.7699
+06-30 23:05:44 The best model epoch 1, val-acc 0.7699
+06-30 23:05:44 -----Epoch 2/30-----
+06-30 23:05:44 current lr: [0.01]

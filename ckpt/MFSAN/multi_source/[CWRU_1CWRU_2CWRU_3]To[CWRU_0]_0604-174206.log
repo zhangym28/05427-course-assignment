@@ -1,0 +1,31 @@
+06-04 17:42:06 model_name: MFSAN
+06-04 17:42:06 source: CWRU_1,CWRU_2,CWRU_3
+06-04 17:42:06 target: CWRU_0
+06-04 17:42:06 data_dir: ./datasets
+06-04 17:42:06 train_mode: multi_source
+06-04 17:42:06 cuda_device: 0
+06-04 17:42:06 save_dir: ./ckpt
+06-04 17:42:06 max_epoch: 30
+06-04 17:42:06 batch_size: 64
+06-04 17:42:06 num_workers: 4
+06-04 17:42:06 signal_size: 1024
+06-04 17:42:06 random_state: 1
+06-04 17:42:06 normlizetype: -1-1
+06-04 17:42:06 opt: sgd
+06-04 17:42:06 lr: 0.01
+06-04 17:42:06 momentum: 0.9
+06-04 17:42:06 betas: (0.9, 0.999)
+06-04 17:42:06 weight_decay: 0.0005
+06-04 17:42:06 lr_scheduler: stepLR
+06-04 17:42:06 gamma: 0.2
+06-04 17:42:06 steps: 10
+06-04 17:42:06 tradeoff: ['exp', 'exp', 'exp']
+06-04 17:42:06 dropout: 0.0
+06-04 17:42:06 save: True
+06-04 17:42:06 load_path: 
+06-04 17:42:06 save_path: ./ckpt\MFSAN\multi_source\[CWRU_1CWRU_2CWRU_3]To[CWRU_0]_0604-174206
+06-04 17:42:06 Detect 10 classes: ['B007', 'B014', 'B021', 'IR007', 'IR014', 'IR021', 'Normal', 'OR007', 'OR014', 'OR021']
+06-04 17:42:06 using 1 / 1 gpus
+06-04 17:42:12 Source set CWRU_1 number of samples 9374.
+06-04 17:42:12 Source set CWRU_2 number of samples 9488.
+06-04 17:42:12 Source set CWRU_3 number of samples 9492.

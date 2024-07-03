@@ -1,0 +1,43 @@
+07-03 16:25:13 model_name: MFSAN
+07-03 16:25:13 source: CWRU_0,CWRU_1,CWRU_2
+07-03 16:25:13 target: CWRU_3
+07-03 16:25:13 data_dir: ./datasets
+07-03 16:25:13 train_mode: multi_source
+07-03 16:25:13 cuda_device: 0
+07-03 16:25:13 save_dir: ./ckpt
+07-03 16:25:13 max_epoch: 30
+07-03 16:25:13 batch_size: 64
+07-03 16:25:13 num_workers: 4
+07-03 16:25:13 signal_size: 1024
+07-03 16:25:13 random_state: 1
+07-03 16:25:13 normlizetype: -1-1
+07-03 16:25:13 opt: sgd
+07-03 16:25:13 lr: 0.01
+07-03 16:25:13 momentum: 0.9
+07-03 16:25:13 betas: (0.9, 0.999)
+07-03 16:25:13 weight_decay: 0.0005
+07-03 16:25:13 lr_scheduler: stepLR
+07-03 16:25:13 gamma: 0.2
+07-03 16:25:13 steps: 10
+07-03 16:25:13 tradeoff: ['exp', 'exp', 'exp']
+07-03 16:25:13 dropout: 0.0
+07-03 16:25:13 save: True
+07-03 16:25:13 load_path: 
+07-03 16:25:13 save_path: ./ckpt\MFSAN\multi_source\[CWRU_0CWRU_1CWRU_2]To[CWRU_3]_0703-162513
+07-03 16:25:13 Detect 10 classes: ['B007', 'B014', 'B021', 'IR007', 'IR014', 'IR021', 'Normal', 'OR007', 'OR014', 'OR021']
+07-03 16:25:13 using 1 / 1 gpus
+07-03 16:25:14 Source set CWRU_0 number of samples 5668.
+07-03 16:25:14 Source set CWRU_1 number of samples 9374.
+07-03 16:25:14 Source set CWRU_2 number of samples 9488.
+07-03 16:25:14 Training set number of samples 7590.
+07-03 16:25:14 Validation set number of samples 1902.
+07-03 16:26:41 -----Epoch 1/30-----
+07-03 16:26:41 current lr: [0.01, 0.01]
+07-03 16:29:12 Train-Loss Source Classifier: 1.6069
+07-03 16:29:12 Train-Loss MMD: 0.1140
+07-03 16:29:12 Train-Loss L1: 0.0391
+07-03 16:29:12 Train-Acc Source Data: 0.4306
+07-03 16:29:50 Val-Acc Target Data: 0.5819
+07-03 16:29:51 The best model epoch 1, val-acc 0.5819
+07-03 16:29:51 -----Epoch 2/30-----
+07-03 16:29:51 current lr: [0.01, 0.01]

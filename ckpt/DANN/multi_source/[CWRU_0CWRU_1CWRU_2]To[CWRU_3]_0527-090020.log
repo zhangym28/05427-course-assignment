@@ -1,0 +1,33 @@
+05-27 09:00:20 model_name: DANN
+05-27 09:00:20 source: CWRU_0,CWRU_1,CWRU_2
+05-27 09:00:20 target: CWRU_3
+05-27 09:00:20 data_dir: ./datasets
+05-27 09:00:20 train_mode: multi_source
+05-27 09:00:20 cuda_device: 0
+05-27 09:00:20 save_dir: ./ckpt
+05-27 09:00:20 max_epoch: 30
+05-27 09:00:20 batch_size: 64
+05-27 09:00:20 num_workers: 4
+05-27 09:00:20 signal_size: 1024
+05-27 09:00:20 random_state: 1
+05-27 09:00:20 normlizetype: -1-1
+05-27 09:00:20 opt: sgd
+05-27 09:00:20 lr: 0.01
+05-27 09:00:20 momentum: 0.9
+05-27 09:00:20 betas: (0.9, 0.999)
+05-27 09:00:20 weight_decay: 0.0005
+05-27 09:00:20 lr_scheduler: stepLR
+05-27 09:00:20 gamma: 0.2
+05-27 09:00:20 steps: 10
+05-27 09:00:20 tradeoff: ['exp', 'exp', 'exp']
+05-27 09:00:20 dropout: 0.0
+05-27 09:00:20 save: True
+05-27 09:00:20 load_path: 
+05-27 09:00:20 save_path: ./ckpt\DANN\multi_source\[CWRU_0CWRU_1CWRU_2]To[CWRU_3]_0527-090020
+05-27 09:00:20 Detect 10 classes: ['B007', 'B014', 'B021', 'IR007', 'IR014', 'IR021', 'Normal', 'OR007', 'OR014', 'OR021']
+05-27 09:00:20 using 1 / 1 gpus
+05-27 09:00:21 Source set CWRU_0 number of samples 5668.
+05-27 09:00:21 Source set CWRU_1 number of samples 9374.
+05-27 09:00:21 Source set CWRU_2 number of samples 9488.
+05-27 09:00:22 Training set number of samples 7590.
+05-27 09:00:22 Validation set number of samples 1902.
